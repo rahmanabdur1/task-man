@@ -12,7 +12,7 @@ const App = () => {
     // Check if the current time is between 7 PM and 11 PM
     const currentTime = new Date();
     const currentHour = currentTime.getHours();
-    if ((currentHour >= 0 && currentHour < 9) || (currentHour === 12)) {
+    if ((currentHour >= 0 && currentHour < 9) || (currentHour === 19)) {
       const timer = setTimeout(() => {
         calculateHasanValue();
       }, 5000); // Delay set to 5 seconds (5000 milliseconds)
