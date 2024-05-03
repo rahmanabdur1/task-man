@@ -34,7 +34,7 @@ const App = () => {
     const randomIndex = Math.floor(Math.random() * valuesArray.length);
     const selectedValue = valuesArray[randomIndex];
     const operator = Math.random() < 0.5 ? '+' : '-';
-    const result = operator === '+' ? selectedValue + hasanValue : selectedValue - hasanValue;
+    const result = operator === '+' ? hasanValue + selectedValue : hasanValue - selectedValue;
     setResult(result);
   };
 
