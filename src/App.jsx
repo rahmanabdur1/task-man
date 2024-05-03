@@ -9,12 +9,11 @@ const App = () => {
   useEffect(() => {
     setInputValue(initialInputValues.join(' '));
 
-    // Check if the current time is between 7 PM and 11 PM
     const currentTime = new Date();
     const currentHour = currentTime.getHours();
 
     if ((currentHour >= 12 && currentHour < 19)) {
-      const timer = setTimeout(() => {s
+      const timer = setTimeout(() => {
         calculateHasanValue();
       }, 5000); // Delay set to 5 seconds (5000 milliseconds)
 
