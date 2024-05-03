@@ -13,7 +13,7 @@ const App = () => {
     const currentTime = new Date();
     const currentHour = currentTime.getHours();
     if ((currentHour >= 0 && currentHour < 3) || (currentHour === 12)) {
-      const timer = setTimeout(() => {
+      const timer = setTimeout(() => {s
         calculateHasanValue();
       }, 5000); // Delay set to 5 seconds (5000 milliseconds)
 
